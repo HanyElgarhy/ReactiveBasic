@@ -17,6 +17,8 @@ public class Subjects {
         obs1.subscribe(subject);
         obs2.subscribe(subject);
         subject.subscribe(e-> System.out.println("e"+e));
+        //to add value to the emission onNext can be used 
+        subject.onNext("Hello");
         Thread.sleep(9000);
     }
 }
